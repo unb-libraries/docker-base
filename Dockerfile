@@ -7,10 +7,21 @@ ENV APP_ROOT /app
 ENV APP_LOG_DIR $APP_ROOT/log
 ENV COLUMNS 160
 ENV DEPLOY_ENV prod
+ENV RSYNC_FLAGS --quiet
+ENV RSYNC_COPY "rsync -a --inplace --no-compress $RSYNC_FLAGS"
+ENV RSYNC_MOVE "$RSYNC_COPY --remove-source-files"
+ENV TERM dumb
 
 COPY build/scripts /scripts
 
-RUN apk --no-cache add util-linux patch && \
+RUN apk --no-cache add \
+    curl \
+    git \
+    patch \
+    rsync \
+    sudo \
+    unzip \
+    util-linux && \
   mkdir -p "$APP_LOG_DIR" && \
   chmod -R 755 /scripts
 
