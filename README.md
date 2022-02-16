@@ -1,11 +1,11 @@
 # unb-libraries/docker-base  [![](https://github.com/unb-libraries/docker-base/workflows/build-test-deploy/badge.svg?branch=2.x)](https://github.com/unb-libraries/docker-base/actions?query=workflow%3Abuild-test-deploy) [![GitHub license](https://img.shields.io/github/license/unb-libraries/docker-base)](https://github.com/unb-libraries/lib.unb.ca/blob/prod/LICENSE) ![GitHub repo size](https://img.shields.io/github/repo-size/unb-libraries/docker-base?label=lean%20repo%20size)
 A lightweight extensible base docker image, suitable for development or production deployments.
 
-## Branches/Tags
-The currently maintained image/tag is **ghcr.io/unb-libraries/base:2.x**.
-
 ## Usage
-This image has no use on its own and serves only as the base of other images. For an example how we use this image, please see [unb-libraries/docker-nginx](https://github.com/unb-libraries/docker-nginx).
+This image offers relatively no useful functionality on its own, but serves well as the base of other images. For an example how we extend this image, please see [unb-libraries/docker-nginx](https://github.com/unb-libraries/docker-nginx).
+
+## Branches/Tags
+The only currently maintained tag is **ghcr.io/unb-libraries/base:2.x**.
 
 ## Author / Contributors
 This application was created at [![UNB Libraries](https://github.com/unb-libraries/assets/raw/master/unblibbadge.png "UNB Libraries")](https://lib.unb.ca) by the following humans:
