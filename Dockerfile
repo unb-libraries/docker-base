@@ -1,4 +1,4 @@
-FROM alpine:3.16
+FROM alpine:3.17
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
 ENV APP_STARTUP_CMD tail -f /dev/null
