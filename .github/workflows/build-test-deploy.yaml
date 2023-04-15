@@ -39,7 +39,7 @@ jobs:
           format: YYYYMMDDHHMMSS
       -
         name: Set Name
-        run: echo "BUILD_IMAGE_NAME=docker-base" >> $GITHUB_ENV
+        run: echo "BUILD_IMAGE_NAME=base" >> $GITHUB_ENV
       -
         name: Set Full Name
         run: echo "BUILD_IMAGE_FULL_NAME=ghcr.io/$CI_REPOSITORY_OWNER/$BUILD_IMAGE_NAME" >> $GITHUB_ENV
