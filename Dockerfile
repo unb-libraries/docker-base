@@ -1,6 +1,8 @@
 FROM alpine:3.17
 MAINTAINER UNB Libraries <libsupport@unb.ca>
 
+ARG TARGETPLATFORM
+
 ENV APP_STARTUP_CMD tail -f /dev/null
 ENV APP_HOSTNAME app.local
 ENV APP_ROOT /app
