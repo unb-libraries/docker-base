@@ -1,4 +1,4 @@
-name: docker-base
+name: Build, Push docker-base
 
 on:
   pull_request:
@@ -7,11 +7,10 @@ on:
 
 jobs:
   deploy:
-    uses: unb-libraries/dockworker/.github/workflows/build-push-notify.yaml@6.x
+    uses: unb-libraries/dockworker-baseimage/.github/workflows/build-base-image.yaml@6.x
     with:
-      image-name: 'ghcr.io/unb-libraries/base'
-      push-branches: '["3.x"]'
+      image-name: ghcr.io/unb-libraries/base
     secrets:
-      GH_CONTAINER_REGISTRY_USER: ${{ secrets.GH_CONTAINER_REGISTRY_USER }}
-      GH_CONTAINER_REGISTRY_TOKEN: ${{ secrets.GH_CONTAINER_REGISTRY_TOKEN }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      GH_CONTAINER_REGISTRY_TOKEN: ${{ secrets.GH_CONTAINER_REGISTRY_TOKEN }}
+      GH_CONTAINER_REGISTRY_USER: ${{ secrets.GH_CONTAINER_REGISTRY_USER }}
