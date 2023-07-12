@@ -8,9 +8,9 @@ dockworker:
       slug: docker-base
       short_slug: base
       uuid: 6000
-  image:
-    name: ghcr.io/unb-libraries/base
   workflows:
+    image:
+      name: ghcr.io/unb-libraries/base
     vcs:
       type: github
       owner: unb-libraries
