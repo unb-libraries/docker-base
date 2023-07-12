@@ -1,0 +1,17 @@
+dockworker:
+  version: '6'
+  application:
+    description: A lightweight extensible base docker image, suitable for development or production deployments.
+    uri: https://github.com/unb-libraries/docker-base
+    identifiers:
+      id: docker-base
+      slug: docker-base
+      short_slug: base
+      uuid: 6000
+  image:
+    name: ghcr.io/unb-libraries/base
+  workflows:
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: docker-base

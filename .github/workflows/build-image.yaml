@@ -1,4 +1,4 @@
-name: Build, Push docker-base
+name: Build ghcr.io/unb-libraries/base
 
 on:
   pull_request:
@@ -14,3 +14,4 @@ jobs:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       GH_CONTAINER_REGISTRY_TOKEN: ${{ secrets.GH_CONTAINER_REGISTRY_TOKEN }}
       GH_CONTAINER_REGISTRY_USER: ${{ secrets.GH_CONTAINER_REGISTRY_USER }}
+      
