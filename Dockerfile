@@ -1,5 +1,5 @@
-FROM alpine:3.17
 MAINTAINER UNB Libraries <libsupport@unb.ca>
+FROM alpine:3.18
 
 ARG TARGETPLATFORM
 
