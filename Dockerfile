@@ -1,4 +1,3 @@
-MAINTAINER UNB Libraries <libsupport@unb.ca>
 FROM alpine:3.18
 
 ARG TARGETPLATFORM
@@ -43,4 +42,5 @@ LABEL ca.unb.lib.generator="none" \
   org.label-schema.vcs-url="https://github.com/unb-libraries/docker-base" \
   org.label-schema.vendor="University of New Brunswick Libraries" \
   org.label-schema.version=$VERSION \
+  org.opencontainers.image.authors="libsystems@unb.ca" \
   org.opencontainers.image.source="https://github.com/unb-libraries/docker-base"
