@@ -3,16 +3,16 @@ MAINTAINER UNB Libraries <libsupport@unb.ca>
 
 ARG TARGETPLATFORM
 
-ENV APP_STARTUP_CMD tail -f /dev/null
-ENV APP_HOSTNAME app.local
-ENV APP_ROOT /app
-ENV APP_LOG_DIR $APP_ROOT/log
-ENV COLUMNS 160
-ENV DEPLOY_ENV prod
-ENV RSYNC_FLAGS --quiet
-ENV RSYNC_COPY "rsync -a --inplace --no-compress $RSYNC_FLAGS"
-ENV RSYNC_MOVE "$RSYNC_COPY --remove-source-files"
-ENV TERM dumb
+ENV APP_STARTUP_CMD="tail -f /dev/null"
+ENV APP_HOSTNAME=app.local
+ENV APP_ROOT=/app
+ENV APP_LOG_DIR=$APP_ROOT/log
+ENV COLUMNS=160
+ENV DEPLOY_ENV=prod
+ENV RSYNC_FLAGS="--quiet"
+ENV RSYNC_COPY="rsync -a --inplace --no-compress $RSYNC_FLAGS"
+ENV RSYNC_MOVE="$RSYNC_COPY --remove-source-files"
+ENV TERM=dumb
 
 COPY build/scripts /scripts
 
