@@ -2,7 +2,7 @@
 A lightweight extensible base docker image, suitable for development or production deployments.
 
 ## Usage
-This image offers relatively no useful functionality on its own, but serves well as the base of other images. For an example how we extend this image, please see [unb-libraries/docker-nginx](https://github.com/unb-libraries/docker-nginx).
+This image offers relatively no useful functionality on its own, but serves as the base of other images. For an example how we extend this image, please see [unb-libraries/docker-nginx](https://github.com/unb-libraries/docker-nginx).
 
 ## Branches/Tags
 The only currently maintained tag is **ghcr.io/unb-libraries/base:2.x**.
