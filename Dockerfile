@@ -20,6 +20,7 @@ RUN apk --no-cache add \
     git \
     patch \
     rsync \
+    socat \
     sudo \
     unzip \
     util-linux && \
