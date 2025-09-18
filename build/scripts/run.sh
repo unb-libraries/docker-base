@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 for i in /scripts/pre-init.d/*sh
 do
   if [ -e "${i}" ]; then
