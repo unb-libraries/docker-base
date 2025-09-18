@@ -12,4 +12,4 @@ do
   fi
 done
 
-$APP_STARTUP_CMD
+exec $APP_STARTUP_CMD
