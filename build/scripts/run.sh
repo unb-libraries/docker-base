@@ -8,7 +8,7 @@ do
     echo "[i] pre-init.d - $SCRIPT_NAME..."
     "${i}"
     FINISH_TIME=$(date +%s)
-    STARTUP_TIME=$(expr $FINISH_TIME - $START_TIME)
+    STARTUP_TIME=$(( FINISH_TIME - START_TIME ))
     echo "${SCRIPT_NAME}|${STARTUP_TIME}" >> /tmp/deploy_step_times
   fi
 done
