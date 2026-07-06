@@ -30,6 +30,8 @@ WORKDIR /app
 
 ENTRYPOINT ["/scripts/run.sh"]
 
+ARG BUILD_DATE
+ARG VERSION
 LABEL ca.unb.lib.generator="none" \
   com.microscaling.docker.dockerfile="/Dockerfile" \
   com.microscaling.license="MIT" \
