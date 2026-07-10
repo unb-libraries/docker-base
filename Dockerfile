@@ -31,16 +31,12 @@ WORKDIR /app
 ENTRYPOINT ["/scripts/run.sh"]
 
 LABEL ca.unb.lib.generator="none" \
-  com.microscaling.docker.dockerfile="/Dockerfile" \
-  com.microscaling.license="MIT" \
-  org.label-schema.build-date=$BUILD_DATE \
-  org.label-schema.description="docker-base is the base docker image at UNB Libraries." \
-  org.label-schema.name="none" \
-  org.label-schema.schema-version="1.0" \
-  org.label-schema.url="https://github.com/unb-libraries/docker-base" \
-  org.label-schema.vcs-ref="2.x" \
-  org.label-schema.vcs-url="https://github.com/unb-libraries/docker-base" \
-  org.label-schema.vendor="University of New Brunswick Libraries" \
-  org.label-schema.version=$VERSION \
   org.opencontainers.image.authors="libsystems@unb.ca" \
-  org.opencontainers.image.source="https://github.com/unb-libraries/docker-base"
+  org.opencontainers.image.created="$BUILD_DATE" \
+  org.opencontainers.image.description="docker-base is the base docker image at UNB Libraries." \
+  org.opencontainers.image.revision="2.x" \
+  org.opencontainers.image.source="https://github.com/unb-libraries/docker-base" \
+  org.opencontainers.image.title="none" \
+  org.opencontainers.image.url="https://github.com/unb-libraries/docker-base" \
+  org.opencontainers.image.vendor="University of New Brunswick Libraries" \
+  org.opencontainers.image.version="$VERSION"
