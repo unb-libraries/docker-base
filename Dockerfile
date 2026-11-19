@@ -15,7 +15,10 @@ ENV TERM=dumb
 
 COPY build/scripts /scripts
 
-RUN apk --no-cache add \
+# Upgrade what the Alpine image ships too: a rebuild then picks up packages fixed since the
+# image was published, which Alpine does not republish the image for.
+RUN apk --no-cache upgrade && \
+  apk --no-cache add \
     curl \
     git \
     patch \
