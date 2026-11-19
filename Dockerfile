@@ -34,6 +34,7 @@ WORKDIR /app
 ENTRYPOINT ["/scripts/run.sh"]
 
 ARG BUILD_DATE
+ARG VCS_REF=3.24.x
 ARG VERSION
 LABEL ca.unb.lib.generator="none" \
   com.microscaling.docker.dockerfile="/Dockerfile" \
@@ -43,7 +44,7 @@ LABEL ca.unb.lib.generator="none" \
   org.label-schema.name="none" \
   org.label-schema.schema-version="1.0" \
   org.label-schema.url="https://github.com/unb-libraries/docker-base" \
-  org.label-schema.vcs-ref="2.x" \
+  org.label-schema.vcs-ref=$VCS_REF \
   org.label-schema.vcs-url="https://github.com/unb-libraries/docker-base" \
   org.label-schema.vendor="University of New Brunswick Libraries" \
   org.label-schema.version=$VERSION \
