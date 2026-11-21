@@ -37,16 +37,13 @@ ARG BUILD_DATE
 ARG VCS_REF=3.24.x
 ARG VERSION
 LABEL ca.unb.lib.generator="none" \
-  com.microscaling.docker.dockerfile="/Dockerfile" \
-  com.microscaling.license="MIT" \
-  org.label-schema.build-date=$BUILD_DATE \
-  org.label-schema.description="docker-base is the base docker image at UNB Libraries." \
-  org.label-schema.name="none" \
-  org.label-schema.schema-version="1.0" \
-  org.label-schema.url="https://github.com/unb-libraries/docker-base" \
-  org.label-schema.vcs-ref=$VCS_REF \
-  org.label-schema.vcs-url="https://github.com/unb-libraries/docker-base" \
-  org.label-schema.vendor="University of New Brunswick Libraries" \
-  org.label-schema.version=$VERSION \
-  org.opencontainers.image.authors="libsystems@unb.ca" \
-  org.opencontainers.image.source="https://github.com/unb-libraries/docker-base"
+  org.opencontainers.image.title="base" \
+  org.opencontainers.image.description="docker-base is the base docker image at UNB Libraries." \
+  org.opencontainers.image.vendor="University of New Brunswick Libraries" \
+  org.opencontainers.image.authors="UNB Libraries <libsupport@unb.ca>" \
+  org.opencontainers.image.url="https://github.com/unb-libraries/docker-base" \
+  org.opencontainers.image.source="https://github.com/unb-libraries/docker-base" \
+  org.opencontainers.image.version="$VERSION" \
+  org.opencontainers.image.revision="$VCS_REF" \
+  org.opencontainers.image.created="$BUILD_DATE" \
+  org.opencontainers.image.licenses="MIT"
